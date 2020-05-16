@@ -1,0 +1,50 @@
+<html>
+  <head>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+       
+    <a-scene>
+      <!--  
+        <a-entity camera="active: true" look-controls wasd-controls position="0 1.6 0" data-aframe-default-camera></a-entity>
+-->
+  
+      <a-light type="ambient" color="#666"></a-light>
+<a-light type="point" intensity="" position="5 5 0"  ></a-light>
+        <!--
+      
+     
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+ <a-plane position="0 0 -10" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+-->
+<a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="#4CC3D9" material="opacity: 0.3;" ></a-box>
+<a-sphere position="0 0 0" scale="1 1 1" color="#EF2D5E"></a-sphere>  
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" color="#FFC65D"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" rotation="0 0 90" color="#1fcf57" animation="property: rotation; to: 0 0 450; easing: linear; loop: true; dur: 5000">
+
+        </a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25"  rotation="90 0 0" color="#a28de0"></a-cylinder>
+
+        
+<a-box position="-5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 -5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+        
+      <a-sky color="#2b5752"></a-sky>
+
+<a-entity camera  look-controls wasd-controls  position="0 4 10"  rotation="0 0 0"></a-entity>
+
+    
+          </a-scene>
+  </body>
+</html>
+

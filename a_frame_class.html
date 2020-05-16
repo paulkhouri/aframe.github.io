@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+ 
+<! -- leave this bit alone for now -->
+<a-light type="ambient" color="rgb(200,200,200)"></a-light>
+<a-light position="10 5 -10" light="type: point; intensity: 1" rotation="0 90 0"></a-light>
+
+<a-entity camera  look-controls wasd-controls="acceleration: 1000"  position="0 4 10"  rotation="0 0 0"></a-entity>
+<! --       -->
+        
+   
+    <! -- position left/right , up/down , in/out   x,y,z -->
+<a-box position="0 0 0" rotation="0 0 45" scale="0.1 10 50" color="rgb(255,150,0)" material="opacity: 0.5; depthTest: true; transparent: true; blending: normal" ></a-box>
+<a-sphere position="0 0 0" scale="1 1 1" rotation="0 0 0" color="rgb(0,0,255)" material="opacity: 0.5; depthTest: true; transparent: true; blending: normal"></a-sphere>  
+<a-sphere position="0 0 0" scale="2 2 2" rotation="0 0 0" color="rgb(0,255,255)" material="opacity: 0.5; depthTest: true; transparent: true; blending: normal"></a-sphere>  
+        
+        <!--
+        
+<a-cylinder position="0 0 0" scale="0.1 10 0.1" rotation="0 0 45" color="rgb(0,255,0)" material="opacity: 0.85; depthTest: false; transparent: true; blending: normal"></a-cylinder>
+
+<a-cylinder position="0 0 0" scale="0.1 10 0.1" rotation="0 0 -45" color="rgb(255,255,0)" material="opacity: 0.85; depthTest: false; transparent: true; blending: normal"></a-cylinder>
+-->
+              
+
+        
+<a-box position="5 0 0" rotation="0 0 0" scale="1 1 1" color="rgb(255,255,0)" material="opacity: 1;" ></a-box>
+        
+<a-box position="0 0 -5" rotation="0 0 0" scale="1 1 1" color="rgb(255,255,0)" material="opacity: 1;" ></a-box>
+
+<a-box position="0 0 5" rotation="0 0 0" scale="1 1 1" color="rgb(255,255,0)" material="opacity: 1;" ></a-box>
+
+
+<a-sky color="rgb(30,80,60)"></a-sky>
+<a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="rgb(0,150,255)" material="opacity: 0.3; transparent: true"></a-box>
+
+
+</a-scene>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+ 
+<!-- leave this bit alone for now -->
+<a-light type="ambient" color="rgb(100,100,100)"></a-light>
+<a-light position="0 0 0" light="type: point; intensity: 1" rotation="0 90 0"></a-light>
+
+<a-entity camera  look-controls wasd-controls="acceleration: 1000"  position="0 4 10"  rotation="0 0 0"></a-entity>
+<!--      
+<a-cylinder position="0 0 0" scale="10 0.1 10" rotation="0 0 0" color="rgb(255,255,255)" material="opacity: 0.25; depthTest: true; transparent: true; blending: additive"></a-cylinder>
+         -->
+
+<a-sphere position="0 0 0" scale="0.1 0.1 0.1" rotation="0 0 0" color="rgb(255,255,255)" material="opacity: 1; depthTest: true; transparent: false; blending: normal"></a-sphere>  
+    <! -- position left/right , up/down , in/out   x,y,z -->
+<a-sphere position="10 0 0" scale="1 1 1" rotation="0 0 0" color="rgb(0,0,255)" material="opacity: 1; depthTest: true; transparent: true; blending: normal"></a-sphere>  
+
+<a-sphere position="-10 0 0" scale="2 2 2" rotation="0 0 0" color="rgb(0,255,255)" material="opacity: 1; depthTest: true; transparent: true; blending: normal"></a-sphere> 
+
+<a-sphere position="0 0 -10" scale="1 1 1" rotation="0 0 0" color="rgb(0,0,255)" material="opacity: 1; depthTest: true; transparent: true; blending: normal"></a-sphere>  
+<a-sphere position="0 0 10" scale="2 2 2" rotation="0 0 0" color="rgb(0,255,255)" material="opacity: 1; depthTest: true; transparent: true; blending: normal"></a-sphere>  
+ 
+
+<a-sky color="rgb(0,0,0)"></a-sky>
+
+
+
+</a-scene>
+  </body>
+</html>
