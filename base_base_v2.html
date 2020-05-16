@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+      <script>
+      AFRAME.registerComponent('hello-world', {
+            init: function () {
+                    console.log('Hello, World!');
+                }
+            });
+    
+ </script> 
+    <a-scene>
+        <script>
+        document.querySelector('a-scene').setAttribute('hello-world', '');
+        </script>
+      
+<a-entity camera  look-controls wasd-controls="acceleration: 1000" position="-5 5 10"  rotation="0 0 0"></a-entity>
+  
+<a-light type="ambient" color="#666"></a-light>
+<a-light type="point" intensity="" position="5 5 0"  ></a-light>
+        
+<a-sky src="https://i.imgur.com/5lCKmXd.jpg" radius="100"></a-sky>
+
+<!--- -->
+<a-entity position="0 0 0">
+<a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="#4CC3D9" material="opacity: 0.3;" > </a-box>
+    
+<a-sphere src="https://i.imgur.com/8tNKyHp.png" position="0 0 0" scale="1 1 1" ></a-sphere>  
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" color="#FFC65D"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" rotation="0 0 90" color="#1fcf57"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25"  rotation="90 0 0" color="#a28de0"></a-cylinder>
+
+        
+<a-box position="-5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 -5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+</a-entity>
+        
+<!--- -->    
+<a-entity position="0 0 -10">
+<a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="#4CC3D9" material="opacity: 0.3;" > </a-box>
+    
+<a-sphere src="https://i.imgur.com/8tNKyHp.png" position="0 0 0" scale="1 1 1" ></a-sphere>  
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" color="#FFC65D"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" rotation="0 0 90" color="#1fcf57"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25"  rotation="90 0 0" color="#a28de0"></a-cylinder>
+
+        
+<a-box position="-5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 -5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+</a-entity>
+        
+<!--- -->
+        
+<a-entity position="0 0 -20">
+<a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="#4CC3D9" material="opacity: 0.3;" > </a-box>
+    
+<a-sphere src="https://i.imgur.com/8tNKyHp.png" position="0 0 0" scale="1 1 1" ></a-sphere>  
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" color="#FFC65D"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" rotation="0 0 90" color="#1fcf57"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25"  rotation="90 0 0" color="#a28de0"></a-cylinder>
+
+        
+<a-box position="-5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 -5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+</a-entity>
+        
+<!--- -->
+        
+<a-entity position="0 10 -20">
+<a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="#4CC3D9" material="opacity: 0.3;" > </a-box>
+    
+<a-sphere src="https://i.imgur.com/8tNKyHp.png" position="0 0 0" scale="1 1 1" ></a-sphere>  
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" color="#FFC65D"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" rotation="0 0 90" color="#1fcf57"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25"  rotation="90 0 0" color="#a28de0"></a-cylinder>
+
+        
+<a-box position="-5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 -5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+</a-entity>
+
+<!--- -->
+        
+<a-entity position="0 10 -10">
+<a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="#4CC3D9" material="opacity: 0.3;" > </a-box>
+    
+<a-sphere src="https://i.imgur.com/8tNKyHp.png" position="0 0 0" scale="1 1 1" ></a-sphere>  
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" color="#FFC65D"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" rotation="0 0 90" color="#1fcf57"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25"  rotation="90 0 0" color="#a28de0"></a-cylinder>
+
+        
+<a-box position="-5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 -5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+</a-entity>
+        
+<!--- -->
+        
+<a-entity position="0 10 0">
+<a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="#4CC3D9" material="opacity: 0.3;" > </a-box>
+    
+<a-sphere src="https://i.imgur.com/8tNKyHp.png" position="0 0 0" scale="1 1 1" ></a-sphere>  
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" color="#FFC65D"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25" rotation="0 0 90" color="#1fcf57"></a-cylinder>
+<a-cylinder position="0 0 0" scale="0.25 10 0.25"  rotation="90 0 0" color="#a28de0"></a-cylinder>
+
+        
+<a-box position="-5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="5 0 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+    <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+<a-box position="0 -5 0" rotation="0 0 0"  scale="1 1 1" color="#4CC3D9" material="opacity: 1;">
+        <a-sphere position="0 0 0" scale="0.65 0.65 0.65"></a-sphere>
+     </a-box>
+</a-entity>
+    
+          </a-scene>
+
+  </body>
+</html>
+
