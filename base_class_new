@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+ 
+<! -- leave this bit alone for now -->
+<a-light type="ambient" color="rgb(100,100,100)"></a-light>
+<a-light type="point" intensity="" position="5 5 0"  ></a-light>
+<a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="rgb(0,150,255)" material="opacity: 0.3;" ></a-box>
+<a-entity camera  look-controls wasd-controls="acceleration: 1000"  position="0 4 10"  rotation="0 0 0"></a-entity>
+<! --       -->
+        
+   
+        
+<a-sphere position="5 0 0" scale="1 1 1" rotation="0 0 0" color="rgb(0,0,255)" material="opacity: 1;"></a-sphere>  
+        
+<a-cylinder position="0 0 0" scale="1 6 1" rotation="0 0 0" color="rgb(255,0,0)" material="opacity: 1;"></a-cylinder>
+        
+        
+<a-box position="-5 0 0" rotation="0 0 0" scale="2 2 2" color="rgb(255,255,0)" material="opacity: 1;" ></a-box>
+
+
+<a-sky color="rgb(30,80,60)"></a-sky>
+
+
+
+</a-scene>
+  </body>
+</html>

@@ -10,18 +10,55 @@
 <a-light type="ambient" color="rgb(100,100,100)"></a-light>
 <a-light type="point" intensity="" position="5 5 0"  ></a-light>
 <a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="rgb(0,150,255)" material="opacity: 0.3;" ></a-box>
-<a-entity camera  look-controls wasd-controls="acceleration: 1000"  position="0 4 10"  rotation="0 0 0"></a-entity>
+<a-entity id="rig" position="0 8 10" rotation="-45 0 0">
+  <a-entity camera  look-controls wasd-controls="acceleration: 1000; fly: true; adAxis: x; enabled: true"  position="0 0 0"  ></a-entity>
+</a-entity>
+<!--
+<a-entity camera  look-controls wasd-controls="acceleration: 1000"  position="0 8 10"  rotation="0 0 0"></a-entity>
+-->
 <! --       -->
         
    
+<a-entity position="0 0 -8" rotation="0 0 15">     
+<a-sphere position="0 0 0" scale="1 1 1" rotation="0 0 0" color="rgb(0,0,255)" material="opacity: 1;"></a-sphere>  
+<a-cone position="0 4 0" color="tomato" radius-bottom="1" radius-top="0" scale="1 6 1"></a-cone> 
+</a-entity>
         
-<a-sphere position="5 0 0" scale="1 1 1" rotation="0 0 0" color="rgb(0,0,255)" material="opacity: 1;"></a-sphere>  
         
-<a-cylinder position="0 0 0" scale="1 6 1" rotation="0 0 0" color="rgb(255,0,0)" material="opacity: 1;"></a-cylinder>
+<a-entity position="5 0 0" scale="1 6 1" rotation="0 45 0" geometry="primitive: cylinder; openEnded: true; thetaLength: 180"  material="side: double; color:rgb(255,150,255)"></a-entity>
         
-        
-<a-box position="-5 0 0" rotation="0 0 0" scale="2 2 2" color="rgb(255,255,0)" material="opacity: 1;" ></a-box>
+<a-entity position="0 0 0" scale="1 6 1" rotation="0 45 0"
+          geometry="primitive: cylinder; segmentsRadial: 6"
+          material="side: double; color:rgb(255,0,255)"
+></a-entity>
 
+
+        
+
+        
+<a-entity position="-5 0 -5" rotation="0 0 45">      
+<a-cylinder position="0 0 0" scale="0.1 10 0.1" rotation="0 0 0" color="rgb(255,0,0)" material="opacity: 1;"></a-cylinder>
+<a-box position="0 0 0" rotation="0 0 0" scale="2 2 2" color="rgb(255,255,0)" material="opacity: 1;" ></a-box>
+<a-sphere position="0 5 0" scale="0.5 0.5 0.5" rotation="0 0 0" color="rgb(0,0,255)" material="opacity: 1;"></a-sphere> 
+</a-entity>
+        
+<a-entity position="5 0 -5">      
+<a-cylinder position="0 0 0" scale="0.1 10 0.1" rotation="0 0 0" color="rgb(255,0,0)" material="opacity: 1;"></a-cylinder>
+<a-box position="0 0 0" rotation="0 0 0" scale="2 2 2" color="rgb(255,255,0)" material="opacity: 1;" ></a-box>
+<a-sphere position="0 5 0" scale="0.5 0.5 0.5" rotation="0 0 0" color="rgb(0,0,255)" material="opacity: 1;"></a-sphere> 
+</a-entity>
+
+<a-entity position="5 0 5">      
+<a-cylinder position="0 0 0" scale="0.1 10 0.1" rotation="0 0 0" color="rgb(255,0,0)" material="opacity: 1;"></a-cylinder>
+<a-box position="0 0 0" rotation="0 0 0" scale="2 2 2" color="rgb(255,255,0)" material="opacity: 1;" ></a-box>
+<a-sphere position="0 5 0" scale="0.5 0.5 0.5" rotation="0 0 0" color="rgb(0,0,255)" material="opacity: 1;"></a-sphere> 
+</a-entity>
+
+<a-entity position="-5 0 5">      
+<a-cylinder position="0 0 0" scale="0.1 10 0.1" rotation="0 0 0" color="rgb(255,0,0)" material="opacity: 1;"></a-cylinder>
+<a-box position="0 0 0" rotation="0 0 0" scale="2 2 2" color="rgb(255,255,0)" material="opacity: 1;" ></a-box>
+<a-sphere position="0 5 0" scale="0.5 0.5 0.5" rotation="0 0 0" color="rgb(0,0,255)" material="opacity: 1;"></a-sphere> 
+</a-entity>
 
 <a-sky color="rgb(30,80,60)"></a-sky>
 

@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene fog="type: exponential; color:rgb(100,100,100); density:0.02">
+ 
+<! -- leave this bit alone for now -->
+<a-light type="ambient" color="rgb(100,100,100)"></a-light>
+<a-light type="point" intensity="" position="5 5 0"  ></a-light>
+<a-box position="0 0 0" rotation="0 0 0" scale="10 0.1 10" color="rgb(0,150,255)" material="opacity: 0.3;" ></a-box>
+<a-entity camera  look-controls wasd-controls="acceleration: 1000"  position="0 4 10"  rotation="0 0 0"></a-entity>
+<! --       -->
+        
+   
+        
+<a-sphere src="https://i.imgur.com/1kLwnCs.jpg" position="5 0 5" scale="1 1 1" rotation="0 0 0" color="rgb(255,255,0)"  material="opacity: 1;"
+          animation="property: rotation; to: 0 1800 0; easing: linear; loop: true; dur: 5000"></a-sphere>  
+<a-sphere src="https://i.imgur.com/1kLwnCs.jpg" position="-5 0 5" scale="1 1 1" rotation="0 0 0" color="rgb(255,255,0)"  material="opacity: 1;"></a-sphere>
+
+
+<a-entity  position="0 1 0" >
+<a-sphere src="https://i.imgur.com/8tNKyHp.png" position="0 1 0" scale="5 1 0.5" color="rgb(255,255,0)"></a-sphere> 
+<a-cylinder src="https://i.imgur.com/8tNKyHp.png"  position="-5 0 1" scale="0.1 2 0.1" rotation="0 0 0"  material="opacity: 1; color: rgb(255,255,0)"></a-cylinder>
+<a-cylinder src="https://i.imgur.com/oDMQrJB.jpg" position="0 0 1" scale="0.1 2 0.1" rotation="0 0 0"  material="opacity: 1;"></a-cylinder>
+<a-cylinder src="https://i.imgur.com/oDMQrJB.jpg" position="5 0 1" scale="0.1 2 0.1" rotation="0 0 0"  material="opacity: 1;"></a-cylinder>   
+<a-box position="0 0 0" src="https://i.imgur.com/8tNKyHp.png" rotation="0 0 0" scale="10 2 1"  material="opacity: 1;" ></a-box>
+</a-entity>
+
+<a-sky color="rgb(255,255,255)"></a-sky>
+
+
+
+</a-scene>
+  </body>
+</html>
